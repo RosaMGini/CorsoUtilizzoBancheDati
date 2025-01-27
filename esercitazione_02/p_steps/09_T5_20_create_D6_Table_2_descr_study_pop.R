@@ -75,7 +75,8 @@ for (type in c("narrow","broad")) {
   tab_nice[,(paste0("cell_",s)) :=  " " ]
   s = s + 1
   
-  for (val in c("0","1","2")) {
+#  for (val in c("0","1","2")) {
+  for (val in c("0","1")) {
     valdet <- fifelse(val == "2","2+",val)
     row_header_1 = c(row_header_1, valdet)
     tab_nice[,(paste0("cell_",s)) := paste0(as.character(get(paste0("n_previous_bleedings_",val) )), " (",as.character(get(paste0("p_previous_bleedings_",val) )),"%)")]

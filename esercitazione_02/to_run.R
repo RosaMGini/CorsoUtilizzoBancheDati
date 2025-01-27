@@ -20,7 +20,7 @@ source(paste0(thisdir,"/p_parameters/4_parameters_study.R"))
 source(paste0(thisdir,"/p_parameters/5_parameters_postprocessing.R"))
 
 
-TEST <- T
+TEST <- F
 
 #
 
@@ -39,10 +39,10 @@ source(paste0(thisdir,"/p_steps/04_T2_10_create_bleeding_components.R"))
 source(paste0(thisdir,"/p_steps/05_T4_10_analyse_bleeding_components.R"))
 source(paste0(thisdir,"/p_steps/06_T2_10_create_bleeding_events.R"))
 source(paste0(thisdir,"/p_steps/06_T2_20_create_study_population.R"))
-source(paste0(thisdir,"/p_steps/06_T2_50_create_study_outcomes.R"))
+# source(paste0(thisdir,"/p_steps/06_T2_50_create_study_outcomes.R"))
 
 
 source(paste0(thisdir,"/p_steps/08_T4_20_create_D5_Table_2_descr_study_pop.R"))
 
-source(paste0(thisdir,"/p_steps/09_T5_35_create_Figure_1.R"))
+source(paste0(thisdir,"/p_steps/09_T5_20_create_D6_Table_2_descr_study_pop.R"))
 

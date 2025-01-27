@@ -1,0 +1,1 @@
+dati simulati generati da ../../simulatore/simulazione_esercitazione_02

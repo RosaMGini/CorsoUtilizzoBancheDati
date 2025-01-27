@@ -106,7 +106,7 @@ data <- data.table::data.table(id = 1:df_size )
 
 set.seed(1234)
 data[, sesso := as.character(sample(1:2, df_size, replace = TRUE, prob = c(.6,.4)))]
-data[,sesso := fifelse(sesso == "1","M","F") ]
+# data[,sesso := fifelse(sesso == "1","M","F") ]
 
 
 # datanas
@@ -172,7 +172,7 @@ data <- data[, num := round(runif(.N, min = 1, max = pmax(round(as.numeric(study
 data <- data[, anchor := NULL]
 
 # Set the mean of the Poisson distribution
-mean_poisson <- 50
+mean_poisson <- 40
 
 # Expand the dataset
 data <- data[num > 1 , {

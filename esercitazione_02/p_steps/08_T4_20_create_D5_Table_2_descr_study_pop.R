@@ -75,11 +75,15 @@ for (type in c("narrow","broad")) {
   temp <- dcast(temp, period ~ number_previous_bleedings, 
                      value.var = "N", fill = 0)
   
-  setnames(temp, c("0","1","2"), paste0("number_previous_bleedings_",c("0","1","2") ))
+  # setnames(temp, c("0","1","2"), paste0("number_previous_bleedings_",c("0","1","2") ))
+
+  setnames(temp, c("0","1"), paste0("number_previous_bleedings_",c("0","1") ))
   
+    
   base_table2 <- merge(base_table2,temp,by = "period", all.x = T)
   
-  for (val in c("0","1","2")) {
+#  for (val in c("0","1","2")) {
+  for (val in c("0","1")) {
     setnames(base_table2, paste0("number_previous_bleedings_",val ), "n_temp")
     base_table2[,p_temp := round(100 * n_temp/n,1)]
     base_table2[is.na(p_temp),n_temp := 0]

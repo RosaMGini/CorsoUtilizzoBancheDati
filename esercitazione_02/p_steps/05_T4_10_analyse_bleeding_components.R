@@ -93,7 +93,8 @@ if (nrow(component_dataset > 0)) {
   )
   
   load(paste0(thisnameoutput,".RData"))
-  processing <- get(paste0(thisnameoutput,".RData"))
+#  processing <- get(paste0(thisnameoutput,".RData"))
+  processing <- data_Figure_components
   processing <- processing[,.(ord_alg, N_, PROP_, PROP_10, PROP_11, PROP_01)]
   processing[, N := as.character(N_)]
   processing <- processing[ N_ > 0 & N_ < 5, N := "< 5"]
