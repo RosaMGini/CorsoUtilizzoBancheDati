@@ -1,3 +1,6 @@
+
+# Descrizione
+
 Questo folder contiene in i_input una piccola istanza di dati sintetici che simulano una sorgente di dati amministrativi italiani, ristretta a una popolazione di utilizzatori di due farmaci anticoagulanti, il rivaroxaban e l'apixaban. 
 
 Inoltre, nel folder si trova un programma in R che esegue un semplice protocollo. Il protocollo è la parte introduttiva di uno studio pre-post volto a comprendere l'impatto su alcuni outcome (a) dell'introduzione di un antidoto all'azione di due farmaci anticoagulanti, rivaroxaban e apixaban, e (b) dell'introduzione di linee guida cliniche per la somministrazione di tale antidoto. Lo studio parte nel 2018 e il periodo di studio è suddiviso in 1: prima dell'introduzione dell'antidoto (fino al 31/8/2021), 2: dopo l'introduzione dell'antidoto (1/9/2021-31/7/2023), 3: dopo l'introduzione delle linee guida (1/8/2023 - 31/12/2023). Nel primo periodo si distinguono separatamente i periodi prima, durante e dopo le restrizioni dovute alla pandemia da Covid 19 (1a, 1b, 1c). Il protcollo completo è più complesso ed è implementato in [questo repository](https://github.com/ARS-toscana/emorragie_gravi/tree/main).
@@ -15,3 +18,11 @@ Nel programma in questo folder ci si limita alla costruzione della popolazione d
 Il programma è strutturato secondo la pipeline sviluppata nello studio IMI-ConcePTION e riassunta in [questo deliverable](https://zenodo.org/records/5829464#.YfraFurMK3A) e [in questo wiki](https://github.com/IMI-ConcePTION/ConceptionTools/wiki). A differenza di quanto descritto in queste risorse, però, l'istanza di dati non è strutturata secondo il Common Data Model di ConcePTION, ma con un adattamento del [Common Data Model di TheShinISS](https://www.epicentro.iss.it/ben/2020/4/theshiniss).
 
 Seguendo le raccomandazioni della pipeline, il programma è suddiviso in step, e il programma viene eseguito lanciando il file to_run.R, che invoca dei file di parametri e poi ciascuno step. Accanto ai commenti al codice, il programma è documentato nel subfolder i_codebook, in cui il [file indice](https://github.com/RosaMGini/CorsoUtilizzoBancheDati/blob/main/esercitazione_02/i_codebooks/00_index_esercitazione_02.xlsx) contiene una riga per ogni dataset intermedio generato, e ciascuno di questi ultimi è rappresentato dal proprio codebook, in un file con il suo nome, nel folder stesso.
+
+# Cosa fare
+
+- Clonare localmente il codice
+- Ispezionare i file nel folder i_input
+- Lanciare il file to_run.R
+- Al termine dell'esecuzione, aprire il folder g_export
+- Esaminare e commentare la tabella D6_Table_2_descr_study_pop_broad.html
