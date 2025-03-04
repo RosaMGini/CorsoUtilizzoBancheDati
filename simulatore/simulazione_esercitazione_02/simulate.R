@@ -437,7 +437,7 @@ data[, data_d := data_a + 10]
 
 # pres
 set.seed(11313)
-data[, pres := fifelse(runif(.N,min = 0, max = 1) < .2,1,0)]
+data[, pres := fifelse(runif(.N,min = 0, max = 1) < .2,0,1)]
 
 
 # clean and assign
