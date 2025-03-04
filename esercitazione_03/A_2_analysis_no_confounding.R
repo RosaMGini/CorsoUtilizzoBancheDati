@@ -35,6 +35,18 @@ barplot(c(percentage_CIGARETTES_lighter_1, percentage_CIGARETTES_lighter_0),
         col = c("brown", "orange"),
         ylim = c(0, 100))
 
+# Calculate the percentage of records with CANCER == 1 among those with CIGARETTES == 0 and CIGARETTES == 1
+percentage_CANCER_CIGARETTES_1 <- (sum(data$CANCER == 1 & data$CIGARETTES == 1) / sum(data$CIGARETTES == 1)) * 100
+percentage_CANCER_CIGARETTES_0 <- (sum(data$CANCER == 1 & data$CIGARETTES == 0) / sum(data$CIGARETTES == 0)) * 100
+
+# Create a bar plot
+barplot(c(percentage_CANCER_CIGARETTES_1, percentage_CANCER_CIGARETTES_0),
+        names.arg = c("Yes", "No"),
+        xlab = "CIGARETTES", ylab = "Percentage with CANCER == 1",
+        col = c("brown", "orange"),
+        ylim = c(0, 100))
+
+
 
 #-----------------------------
 
