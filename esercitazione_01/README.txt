@@ -2,12 +2,12 @@ Questo folder contiene le tabelle di alcune banche dati (anagrafe, SDO ed esenzi
 
 1) caricare le tre banche dati in formato data.table e convertire in data i campi appropriati
 
-2) ispezionare il file ANAGRAFE: a che et‡ sono entrati in anagrafe i 5 soggetti? chi Ë uscito e perchÈ? cosa significa il valore 'missing' del campo data_uscita? e il valore 'missing' del campo data_morte?
+2) ispezionare il file ANAGRAFE: a che et√† sono entrati in anagrafe i 5 soggetti? chi √® uscito e perch√©? cosa significa il valore 'missing' del campo data_uscita? e il valore 'missing' del campo data_morte?
 
 3) ispezionare il file SDO, tenendo conto che tutti i codici che cominciano con 410 significano 'infarto':
 
 -) quanti ricoveri ha ciascuna persona della popolazione?
--) qual Ë il numero di ospedalizzazioni per infarto dal 2019 al 2024? quali sono i casi incidenti di infarto nella popolazione nel periodo 2019-2024?
+-) qual √® il numero di ospedalizzazioni per infarto dal 2019 al 2024? quali sono i casi incidenti di infarto nella popolazione nel periodo 2019-2024?
 
 4) ispezionare il file ESENZIONI, tenendo conto che tutti i codici che cominciano con 250 significano 'diabete':
 
